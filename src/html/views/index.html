@@ -1,0 +1,89 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('../includes/head.html').default)(data) %>
+
+<section class="mainblock">
+  <%= _.template(require('../includes/header.html').default)(data) %>
+
+  <div class="mainblock__wrapper">
+    <div class="section">
+
+      <div class="mainblock__nav">
+        <ul>
+          <li><a href="#block0" class="scrollTo active">Главная</a></li>
+          <li><a href="#block1" class="scrollTo">Каталог</a></li>
+          <li><a href="#block2" class="scrollTo">О нас</a></li>
+          <li><a href="#block3" class="scrollTo">Контакты</a></li>
+        </ul>
+      </div><!-- /.mainblock__nav -->
+      <div class="mainblock__content">
+        <div class="container">
+          <div class="mainblock__title">
+            <h1>Производство спецтехники с КМУ <br> на заказ в <span class="textblue">Набережных Челнах</span></h1>
+          </div><!-- /.mainblock__title -->
+          <div class="mainblock__text">с 2006 года разрабатываем и производим спецтехнику на базе КамАЗ, <br>
+            производим технику любой сложности</div>
+          <!-- /.mainblock__text -->
+          <div class="mainblock__link">
+            <a href="#block1" class="scrollTo">Подробнее</a>
+          </div><!-- /.mainblock__link -->
+        </div><!-- /.container -->
+      </div><!-- /.mainblock__content -->
+
+    </div><!-- /.section -->
+  </div><!-- /.mainblock__wrapper -->
+</section><!-- /.mainblock -->
+
+
+<section class="cardsblock" id="block1">
+  <div class="container">
+    <div class="cardsblock__items">
+      <div class="cardsblock__item">
+        <div class="cardsblock__card">
+          <a href="">
+            <div class="cardsblock__content">
+              <div class="cardsblock__title">Бортовые <br> с КМУ</div><!-- /.cardsblock__title -->
+              <div class="cardsblock__image">
+                <img src="./images/kamaz12.png" alt="">
+              </div><!-- /.cardsblock__image -->
+              <div class="cardsblock__link">перейти</div><!-- /.cardsblock__link -->
+            </div><!-- /.cardsblock__content -->
+          </a>
+        </div><!-- /.cardsblock__card -->
+      </div><!-- /.cardsblock__item -->
+
+      <div class="cardsblock__item">
+        <div class="cardsblock__card">
+          <a href="">
+            <div class="cardsblock__content">
+              <div class="cardsblock__title">Металловоз <br> с КМУ</div><!-- /.cardsblock__title -->
+              <div class="cardsblock__image">
+                <img src="./images/kamaz2.png" alt="">
+              </div><!-- /.cardsblock__image -->
+              <div class="cardsblock__link">перейти</div><!-- /.cardsblock__link -->
+            </div><!-- /.cardsblock__content -->
+          </a>
+        </div><!-- /.cardsblock__card -->
+      </div><!-- /.cardsblock__item -->
+      <div class="cardsblock__item">
+        <div class="cardsblock__card">
+          <a href="">
+            <div class="cardsblock__content">
+              <div class="cardsblock__title">Тягач <br> с КМУ</div><!-- /.cardsblock__title -->
+              <div class="cardsblock__image">
+                <img src="./images/kamaz3.png" alt="">
+              </div><!-- /.cardsblock__image -->
+              <div class="cardsblock__link">перейти</div><!-- /.cardsblock__link -->
+            </div><!-- /.cardsblock__content -->
+          </a>
+        </div><!-- /.cardsblock__card -->
+      </div><!-- /.cardsblock__item -->
+
+
+    </div><!-- /.cardsblock__items -->
+  </div><!-- /.container -->
+</section>
+
+<%= _.template(require('../includes/footer.html').default)(data) %>
