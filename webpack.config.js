@@ -85,11 +85,11 @@ const config = {
     ],
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    }),
+    /*  new webpack.ProvidePlugin({
+       $: 'jquery',
+       jQuery: 'jquery',
+       'window.jQuery': 'jquery'
+     }), */
     new MiniCssExtractPlugin({
       filename: "./css/style.bundle.css",
     }),

@@ -1,9 +1,3 @@
-import './maskedinput.min.js'
-import './bootstrap.min.js'
-
-
-
-
 $(document).ready(function () {
 
   jQuery("a.scrollTo").click(function (event) {
@@ -16,5 +10,49 @@ $(document).ready(function () {
     return false;
   });
 
+
+  $(".shapeslider__slider").slick({
+    // normal options...
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: false,
+    dots: false,
+    // the magic
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+
+        }
+      }
+    ]
+  });
+
+  $(".slider-left").click(function (e) {
+    $(this).parent().parent().find(".slick-slider").slick("slickNext");
+  });
+  $(".slider-right").click(function (e) {
+    $(this).parent().parent().find(".slick-slider").slick("slickPrev");
+  });
 
 })
