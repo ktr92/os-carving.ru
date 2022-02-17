@@ -6,13 +6,14 @@
 
 body {
   min-width: 320px;
-  font-family: 'Proxima Nova Rg';
+  font-family: 'TT Norms';
   @include clear;
   scroll-behavior: smooth;
+
 }
 
 * {
-  font-family: 'Proxima Nova Rg';
+  font-family: 'TT Norms';
   box-sizing: border-box;
   outline: none !important;
 }
@@ -23,6 +24,9 @@ main {
 
 a {
   transition: all 0.3s ease;
+}
+a:hover, a:focus {
+  text-decoration: none;
 }
 
 
@@ -86,7 +90,6 @@ a {
 }
 
 .mainblock__title h1 {
-  font-family: 'Proxima Nova Rg';
   font-size: 50px;
   color: rgb(232, 234, 239);
   font-weight: bold;
@@ -896,6 +899,9 @@ mark {
 .contactsblock__phones {
   margin-bottom: 70px;
 }
+.mainblock__nav_mobile {
+  display: none;
+}
 
 .btn_main.btn_shape {
   display: inline-block;
@@ -1283,4 +1289,172 @@ header#header .header__info {
   font-size: 22px;
 }
 
+}
+
+
+.page {
+  padding-top: 147px;
+}
+.pageheader {
+  border-top: 1px solid #E6E6E6;
+  background: #fff;
+}
+.pageheader_catalog {
+  display: flex;
+}
+.pageheading {
+  padding:  20px 0;
+}
+.breadcrumbs {
+  margin: 30px 0;
+  ul {
+    @include clear-list;
+   li {
+     position: relative;
+     padding-right: 12px;
+     margin-right: 5px;
+     display: inline-block;
+     list-style: none;
+
+     a {
+       &:after {
+         content: "-";
+         position: absolute;
+         right: 0;
+         top: 1px;
+         
+       }
+
+       span {
+        text-decoration: underline;
+        color: #005EC0;
+       }
+       &:hover {
+         span {
+          text-decoration: none;
+         }
+       }
+      
+     }
+     span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+      text-align: right;
+      /* black/40 */
+      color: #999999;
+     
+     }
+   }
+  }
+}
+.catalogcards {
+}
+.catalogcards__items {
+  display: flex;
+}
+.catalogcards__item {
+  flex: 1 1 0px;
+  border-right: 1px solid #E6E6E6;
+}
+.catalogcard {
+  padding: 50px 40px;
+  height: 100%;
+  &:hover {
+    .catalogcard__image img {
+      transform: scale(1.1);
+     transition: all .2s ease-in-out;
+    }
+  }
+}
+.catalogcard__wrapper {
+  height: 100%;
+  position: relative;
+  padding-bottom: 40px;
+  
+}
+.catalogcard__title {
+  font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+/* or 125% */
+margin-bottom: 8px;
+
+/* black/black 100 */
+
+color: #000000;
+}
+.catalogcard__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  
+  /* black/60 */
+  
+  color: #666666;
+}
+.catalogcard__image {
+  margin-bottom: 20px;
+  img {
+    margin-left: -20px;
+  }
+
+  
+}
+.catalogcard__link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* black/80 */
+
+color: #333333;
+  img, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    padding-left: 10px;
+  }
+}
+
+.page h1 {
+  font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 100%;
+/* or 36px */
+
+
+/* black/black 100 */
+
+color: #000000;
+}
+
+.catalogcard__header {
+  min-height: 87px;
+  margin-bottom: 23px;
+}
+
+.pageheader_catalog  {
+  > * {
+    border-right: 1px solid #E6E6E6;
+  }
+  >:last-child {
+    border-right: none;
+  }
+  .pageheading {
+    max-width: 285px;
+  }
 }
