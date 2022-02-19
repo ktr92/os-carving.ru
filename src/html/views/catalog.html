@@ -4,637 +4,639 @@
 }; %>
 <%= _.template(require('../includes/head.html').default)(data) %>
 <%= _.template(require('../includes/header.html').default)(data) %>
-<div class="page">
-  <section class="pageheader">
+<div class="page page_white">
+  <!-- .page_white потому что фон в этом макете белого цвета -->
+  <div class="layout">
+    <section class="pageheader">
+      <div class="container">
+        <div class="pageheader__content pageheader_catalog">
+          <div class="pageheading">
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href=""><span>Главная</span></a></li>
+                <li><span>Каталог спецтехники</span></li>
+              </ul>
+            </div><!-- /.breadcrumbs -->
+            <h1>Каталог спецтехники</h1>
+          </div><!-- /.pageheading -->
+          <div class="catalogcards">
+            <div class="catalogcards__items">
+              <div class="catalogcards__item">
+                <div class="catalogcard">
+                  <div class="catalogcard__wrapper">
+                    <div class="catalogcard__header">
+                      <div class="catalogcard__title">Бортовые с КМУ</div>
+                      <div class="catalogcard__info">В наличии: 25</div>
+                    </div>
+                    <div class="catalogcard__image"><img src="./images/card1.jpg" alt=""></div>
+                    <a href="#" class="catalogcard__link">
+                      <img src="./img/card-arrow.svg" alt="">
+                      <span>Смотреть авто</span>
+                    </a><!-- /.catalogcard__link -->
+                  </div><!-- /.catalogcard__wrapper -->
+                </div><!-- /.catalogcard -->
+              </div><!-- /.catalogcards__item -->
+
+              <div class="catalogcards__item">
+                <div class="catalogcard">
+                  <div class="catalogcard__wrapper">
+                    <div class="catalogcard__header">
+                      <div class="catalogcard__title">Металловозы с КМУ</div>
+                      <div class="catalogcard__info">В наличии: 25</div>
+                    </div>
+                    <div class="catalogcard__image"><img src="./images/card1.jpg" alt=""></div>
+                    <a href="#" class="catalogcard__link">
+                      <img src="./img/card-arrow.svg" alt="">
+                      <span>Смотреть авто</span>
+                    </a><!-- /.catalogcard__link -->
+                  </div><!-- /.catalogcard__wrapper -->
+                </div><!-- /.catalogcard -->
+              </div><!-- /.catalogcards__item -->
+              <div class="catalogcards__item">
+                <div class="catalogcard">
+                  <div class="catalogcard__wrapper">
+                    <div class="catalogcard__header">
+                      <div class="catalogcard__title">Тягач с КМУ</div>
+                      <div class="catalogcard__info">В наличии: 25</div>
+                    </div>
+                    <div class="catalogcard__image"><img src="./images/card1.jpg" alt=""></div>
+                    <a href="#" class="catalogcard__link">
+                      <img src="./img/card-arrow.svg" alt="">
+                      <span>Смотреть авто</span>
+                    </a><!-- /.catalogcard__link -->
+                  </div><!-- /.catalogcard__wrapper -->
+                </div><!-- /.catalogcard -->
+              </div><!-- /.catalogcards__item -->
+
+            </div><!-- /.catalogcards__items -->
+          </div><!-- /.catalogcards -->
+        </div><!-- /.pageheader_catalog -->
+      </div><!-- /.container -->
+    </section><!-- /.pageheader pageheader_catalog -->
+
+    <section class="pagefilter">
+      <div class="container">
+        <div class="filter">
+          <form action="">
+            <div class="filter__wrapper">
+              <div class="filter__header">
+                <div class="filter__leftside">
+                  <div class="filter__title">Все автомобили</div>
+                  <div class="filter__tags">
+                    <div class="filtertag">
+                      <span>2 фильтра</span>
+                      <a href="#"><img src="./img/hide.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div><!-- /.filter__leftside -->
+                <div class="filter__rightside">
+                  <div class="filter__reset">
+                    <a href="" class="resetbtn">Сбросить</a>
+                  </div><!-- /.filter__reset -->
+                </div><!-- /.filter__rightside -->
+              </div><!-- /.filter__header -->
+          </form>
+          <div class="filter__main">
+            <div class="filter__items">
+              <div class="filter__item">
+                <div class="select">
+                  <select name="" id="">
+                    <option value="">Шасси</option>
+                    <option value="">Шасси 1</option>
+                    <option value="">Шасси 2</option>
+                  </select>
+                </div><!-- /.select -->
+              </div><!-- /.filter__item -->
+
+              <div class="filter__item">
+                <div class="select">
+                  <select name="" id="">
+                    <option value="">Модель КП</option>
+                    <option value="">Модель КП 1</option>
+                    <option value="">Модель КП 2</option>
+                  </select>
+                </div><!-- /.select -->
+              </div><!-- /.filter__item -->
+              <div class="filter__item">
+                <div class="select">
+                  <select name="" id="">
+                    <option value="">Модель тягача</option>
+                    <option value="">Модель тягача 1</option>
+                    <option value="">Модель тягача 2</option>
+                  </select>
+                </div><!-- /.select -->
+              </div><!-- /.filter__item -->
+              <div class="filter__item">
+                <button type="submit" class="btn_primary">Подобрать автомобили</button>
+              </div><!-- /.filter__item -->
+
+            </div><!-- /.filter__items -->
+          </div><!-- /.filter__main -->
+        </div><!-- /.filter__wrapper -->
+      </div><!-- /.filter -->
+  </div><!-- /.container -->
+  </section><!-- /.pagefilter -->
+
+  <section class="catalog" id="topscroll">
     <div class="container">
-      <div class="pageheader_catalog">
-        <div class="pageheading">
-          <div class="breadcrumbs">
-            <ul>
-              <li><a href=""><span>Главная</span></a></li>
-              <li><span>Каталог спецтехники</span></li>
-            </ul>
-          </div><!-- /.breadcrumbs -->
-          <h1>Каталог спецтехники</h1>
-        </div><!-- /.pageheading -->
-        <div class="catalogcards">
-          <div class="catalogcards__items">
-            <div class="catalogcards__item">
-              <div class="catalogcard">
-                <div class="catalogcard__wrapper">
-                  <div class="catalogcard__header">
-                    <div class="catalogcard__title">Бортовые с КМУ</div>
-                    <div class="catalogcard__info">В наличии: 25</div>
-                  </div>
-                  <div class="catalogcard__image"><img src="./images/card1.jpg" alt=""></div>
-                  <a href="#" class="catalogcard__link">
-                    <img src="./img/card-arrow.svg" alt="">
-                    <span>Смотреть авто</span>
-                  </a><!-- /.catalogcard__link -->
-                </div><!-- /.catalogcard__wrapper -->
-              </div><!-- /.catalogcard -->
-            </div><!-- /.catalogcards__item -->
-
-            <div class="catalogcards__item">
-              <div class="catalogcard">
-                <div class="catalogcard__wrapper">
-                  <div class="catalogcard__header">
-                    <div class="catalogcard__title">Металловозы с КМУ</div>
-                    <div class="catalogcard__info">В наличии: 25</div>
-                  </div>
-                  <div class="catalogcard__image"><img src="./images/card1.jpg" alt=""></div>
-                  <a href="#" class="catalogcard__link">
-                    <img src="./img/card-arrow.svg" alt="">
-                    <span>Смотреть авто</span>
-                  </a><!-- /.catalogcard__link -->
-                </div><!-- /.catalogcard__wrapper -->
-              </div><!-- /.catalogcard -->
-            </div><!-- /.catalogcards__item -->
-            <div class="catalogcards__item">
-              <div class="catalogcard">
-                <div class="catalogcard__wrapper">
-                  <div class="catalogcard__header">
-                    <div class="catalogcard__title">Тягач с КМУ</div>
-                    <div class="catalogcard__info">В наличии: 25</div>
-                  </div>
-                  <div class="catalogcard__image"><img src="./images/card1.jpg" alt=""></div>
-                  <a href="#" class="catalogcard__link">
-                    <img src="./img/card-arrow.svg" alt="">
-                    <span>Смотреть авто</span>
-                  </a><!-- /.catalogcard__link -->
-                </div><!-- /.catalogcard__wrapper -->
-              </div><!-- /.catalogcard -->
-            </div><!-- /.catalogcards__item -->
-
-          </div><!-- /.catalogcards__items -->
-        </div><!-- /.catalogcards -->
-      </div><!-- /.pageheader_catalog -->
-    </div><!-- /.container -->
-  </section><!-- /.pageheader pageheader_catalog -->
-
-  <section class="pagefilter">
-    <div class="container">
-      <div class="filter">
-        <form action="">
-          <div class="filter__wrapper">
-            <div class="filter__header">
-              <div class="filter__leftside">
-                <div class="filter__title">Все автомобили</div>
-                <div class="filter__tags">
-                  <div class="filtertag">
-                    <span>2 фильтра</span>
-                    <a href="#"><img src="./img/hide.svg" alt=""></a>
-                  </div>
-                </div>
-              </div><!-- /.filter__leftside -->
-              <div class="filter__rightside">
-                <div class="filter__reset">
-                  <a href="" class="resetbtn">Сбросить</a>
-                </div><!-- /.filter__reset -->
-              </div><!-- /.filter__rightside -->
-            </div><!-- /.filter__header -->
-        </form>
-        <div class="filter__main">
-          <div class="filter__items">
-            <div class="filter__item">
-              <div class="select">
-                <select name="" id="">
-                  <option value="">Шасси</option>
-                  <option value="">Шасси 1</option>
-                  <option value="">Шасси 2</option>
-                </select>
-              </div><!-- /.select -->
-            </div><!-- /.filter__item -->
-
-            <div class="filter__item">
-              <div class="select">
-                <select name="" id="">
-                  <option value="">Модель КП</option>
-                  <option value="">Модель КП 1</option>
-                  <option value="">Модель КП 2</option>
-                </select>
-              </div><!-- /.select -->
-            </div><!-- /.filter__item -->
-            <div class="filter__item">
-              <div class="select">
-                <select name="" id="">
-                  <option value="">Модель тягача</option>
-                  <option value="">Модель тягача 1</option>
-                  <option value="">Модель тягача 2</option>
-                </select>
-              </div><!-- /.select -->
-            </div><!-- /.filter__item -->
-            <div class="filter__item">
-              <button type="submit" class="btn_primary">Подобрать автомобили</button>
-            </div><!-- /.filter__item -->
-
-          </div><!-- /.filter__items -->
-        </div><!-- /.filter__main -->
-      </div><!-- /.filter__wrapper -->
-    </div><!-- /.filter -->
-</div><!-- /.container -->
-</section><!-- /.pagefilter -->
-
-<section class="catalog" id="topscroll">
-  <div class="container">
-    <div class="catalog__header">
-      <div class="catalog__nav">
-        <div class="catalog__info">Автомобилей: 42 </div>
-        <div class="catalog__sort">
-          <div class="sort">
-            <div class="sort__caption">Сортировать по: </div>
-            <div class="sort__items">
-              <!-- .sortbtn .sortbtn__desc убывание неактивное, 
+      <div class="catalog__header">
+        <div class="catalog__nav">
+          <div class="catalog__info">Автомобилей: 42 </div>
+          <div class="catalog__sort">
+            <div class="sort">
+              <div class="sort__caption">Сортировать по: </div>
+              <div class="sort__items">
+                <!-- .sortbtn .sortbtn__desc убывание неактивное, 
                   .sortbtn .sortbtn_active .sortbtn__desc убывание активное, 
                   .sortbtn .sortbtn__asc возрастание неактивное, 
                   .sortbtn .sortbtn_active .sortbtn__asc возрастание активное, 
               -->
-              <div class="sort__item"><a href="" class="sortbtn sortbtn_active sortbtn__desc">Названию</a></div>
-              <div class="sort__item"><a href="" class="sortbtn sortbtn__asc">Цене</a></div>
-            </div><!-- /.sort__items -->
-          </div><!-- /.sort -->
-        </div>
-      </div><!-- /.catalog__nav -->
-    </div><!-- /.catalog__header -->
-    <div class="catalog__main">
-      <div class="products">
-        <div class="products__items">
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product1.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+                <div class="sort__item"><a href="" class="sortbtn sortbtn_active sortbtn__desc">Названию</a></div>
+                <div class="sort__item"><a href="" class="sortbtn sortbtn__asc">Цене</a></div>
+              </div><!-- /.sort__items -->
+            </div><!-- /.sort -->
+          </div>
+        </div><!-- /.catalog__nav -->
+      </div><!-- /.catalog__header -->
+      <div class="catalog__main">
+        <div class="products">
+          <div class="products__items">
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product1.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
 
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product2.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product2.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product3.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product3.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product4.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product4.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product1.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product1.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
 
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product2.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product2.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product3.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product3.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
-          <div class="products__item">
-            <div class="productcard">
-              <div class="productcard__wrapper">
-                <div class="productcard__leftside">
-                  <div class="productcard__image">
-                    <div class="productcard__img">
-                      <img src="./images/product4.jpg" alt="">
-                    </div><!-- /.productcard__img -->
-                  </div><!-- /.productcard__image -->
-                </div><!-- /.productcard__leftside -->
-                <div class="productcard__rightside">
-                  <div class="productcard__content">
-                    <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
-                    <div class="productcard__params">
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель шасси</div>
-                        <div class="productcard__paramright">КАМАЗ-43118-RR</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Модель дв.</div>
-                        <div class="productcard__paramright">ISL340 50 (E-5)</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Грузовой момент, тм</div>
-                        <div class="productcard__paramright">19</div>
-                      </div><!-- /.productcard__param -->
-                      <div class="productcard__param">
-                        <div class="productcard__paramleft">Г/п (min вылет)</div>
-                        <div class="productcard__paramright">8000 кг (2 м)</div>
-                      </div><!-- /.productcard__param -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
+            <div class="products__item">
+              <div class="productcard">
+                <div class="productcard__wrapper">
+                  <div class="productcard__leftside">
+                    <div class="productcard__image">
+                      <div class="productcard__img">
+                        <img src="./images/product4.jpg" alt="">
+                      </div><!-- /.productcard__img -->
+                    </div><!-- /.productcard__image -->
+                  </div><!-- /.productcard__leftside -->
+                  <div class="productcard__rightside">
+                    <div class="productcard__content">
+                      <div class="productcard__title">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+                      <div class="productcard__params">
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель шасси</div>
+                          <div class="productcard__paramright">КАМАЗ-43118-RR</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Модель дв.</div>
+                          <div class="productcard__paramright">ISL340 50 (E-5)</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Грузовой момент, тм</div>
+                          <div class="productcard__paramright">19</div>
+                        </div><!-- /.productcard__param -->
+                        <div class="productcard__param">
+                          <div class="productcard__paramleft">Г/п (min вылет)</div>
+                          <div class="productcard__paramright">8000 кг (2 м)</div>
+                        </div><!-- /.productcard__param -->
 
-                    </div><!-- /.productcard__params -->
-                    <div class="productcard__buttons">
-                      <div class="productcard__link">
-                        <a href="" class="btn_primary btn_arrow">Подробнее</a>
-                      </div>
-                      <div class="productcard__price">
-                        <a href="" class="btn_border">Цена</a>
-                      </div>
-                    </div><!-- /.productcard__buttons -->
-                  </div><!-- /.productcard__content -->
-                </div><!-- /.productcard__rightside -->
-              </div><!-- /.productcard__wrapper -->
-            </div><!-- /.productcard -->
-          </div><!-- /.products__item -->
+                      </div><!-- /.productcard__params -->
+                      <div class="productcard__buttons">
+                        <div class="productcard__link">
+                          <a href="" class="btn_primary btn_arrow">Подробнее</a>
+                        </div>
+                        <div class="productcard__price">
+                          <a href="" class="btn_border">Цена</a>
+                        </div>
+                      </div><!-- /.productcard__buttons -->
+                    </div><!-- /.productcard__content -->
+                  </div><!-- /.productcard__rightside -->
+                </div><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.products__item -->
 
-        </div><!-- /.products__items -->
-      </div><!-- /.products -->
-    </div><!-- /.catalog__main -->
-    <div class="catalog__footer">
-      <div class="catalog__nav">
-        <div class="catalog__info">
-          Показано <span class="black">8 из 42</span>
-        </div><!-- /.catalog__info -->
-        <div class="catalog__showmore">
-          <a href="" class="btn_gray btn_showmore"><span>показать еще (8)</span> </a>
-        </div><!-- /.catalog__showmore -->
-        <div class="catalog__up">
-          <a href="#topscroll" class="scrollup">
-            <span class="scrollup__text">К началу</span>
-            <div class="scrollup__img"><img src="./img/goup.svg" alt=""></div>
-          </a><!-- /.scrollup -->
-        </div><!-- /.catalog__up -->
-      </div><!-- /.catalog__nav -->
-    </div><!-- /.catalog__footer -->
-  </div><!-- /.container -->
-</section><!-- /.catalog -->
+          </div><!-- /.products__items -->
+        </div><!-- /.products -->
+      </div><!-- /.catalog__main -->
+      <div class="catalog__footer">
+        <div class="catalog__nav">
+          <div class="catalog__info">
+            Показано <span class="black">8 из 42</span>
+          </div><!-- /.catalog__info -->
+          <div class="catalog__showmore">
+            <a href="" class="btn_gray btn_showmore"><span>показать еще (8)</span> </a>
+          </div><!-- /.catalog__showmore -->
+          <div class="catalog__up">
+            <a href="#topscroll" class="scrollup">
+              <span class="scrollup__text">К началу</span>
+              <div class="scrollup__img"><img src="./img/goup.svg" alt=""></div>
+            </a><!-- /.scrollup -->
+          </div><!-- /.catalog__up -->
+        </div><!-- /.catalog__nav -->
+      </div><!-- /.catalog__footer -->
+    </div><!-- /.container -->
+  </section><!-- /.catalog -->
 
 
-<section class="fitchesblock">
-  <div class="container">
-    <div class="fitchesblock__header">
-      <h2>Наши <br>преимущества</h2>
-      <div class="fitchesblock__descr">Молодой и развивающийся завод по проектированию,
-        изготовлению спецтехники с КМУ и сельскохозяйственной техники. </div>
-    </div><!-- /.fitchesblock__header -->
-    <div class="fitchesblock__items">
-      <div class="fitchesblock__item">
-        <div class="fitchesblock__wrapper">
-          <div class="fitchesblock__content">
-            <div class="fitchesblock__title">
-              <div class="fitchesblock__icon">
-                <img src="./img/like.png" alt="">
-              </div><!-- /.fitchesblock__icon -->
-              <div class="fitchesblock__name">Качество</div>
-            </div><!-- /.fitchesblock__title -->
-            <div class="fitchesblock__text">Мы гарантируем высочайшее качество продукции.</div>
-          </div><!-- /.fitchesblock__content -->
-        </div><!-- /.fitchesblock__wrapper -->
-      </div><!-- /.fitchesblock__item -->
-      <div class="fitchesblock__item">
-        <div class="fitchesblock__wrapper">
-          <div class="fitchesblock__content">
-            <div class="fitchesblock__title">
-              <div class="fitchesblock__icon">
-                <img src="./img/shield.png" alt="">
-              </div><!-- /.fitchesblock__icon -->
-              <div class="fitchesblock__name">Гарантия</div>
-            </div><!-- /.fitchesblock__title -->
-            <div class="fitchesblock__text">Мы всегда четко соблюдаем свои обязательства.</div>
-          </div><!-- /.fitchesblock__content -->
-        </div><!-- /.fitchesblock__wrapper -->
-      </div><!-- /.fitchesblock__item -->
-      <div class="fitchesblock__item">
-        <div class="fitchesblock__wrapper">
-          <div class="fitchesblock__content">
-            <div class="fitchesblock__title">
-              <div class="fitchesblock__icon">
-                <img src="./img/list.png" alt="">
-              </div><!-- /.fitchesblock__icon -->
-              <div class="fitchesblock__name">Широкий <br> ассортимент</div>
-            </div><!-- /.fitchesblock__title -->
-            <div class="fitchesblock__text">Наша компания предлагает широкий ассортимент продукции.</div>
-          </div><!-- /.fitchesblock__content -->
-        </div><!-- /.fitchesblock__wrapper -->
-      </div><!-- /.fitchesblock__item -->
-      <div class="fitchesblock__item">
-        <div class="fitchesblock__wrapper">
-          <div class="fitchesblock__content">
-            <div class="fitchesblock__title">
-              <div class="fitchesblock__icon">
-                <img src="./img/conversation.png" alt="">
-              </div><!-- /.fitchesblock__icon -->
-              <div class="fitchesblock__name">Индивидуально</div>
-            </div><!-- /.fitchesblock__title -->
-            <div class="fitchesblock__text">Индивидуальная работа с каждым клиентом.</div>
-          </div><!-- /.fitchesblock__content -->
-        </div><!-- /.fitchesblock__wrapper -->
-      </div><!-- /.fitchesblock__item -->
-      <div class="fitchesblock__item">
-        <div class="fitchesblock__wrapper">
-          <div class="fitchesblock__content">
-            <div class="fitchesblock__title">
-              <div class="fitchesblock__icon">
-                <img src="./img/agreement.png" alt="">
-              </div><!-- /.fitchesblock__icon -->
-              <div class="fitchesblock__name">Квалифицированный <br> персонал</div>
-            </div><!-- /.fitchesblock__title -->
-            <div class="fitchesblock__text">Наши технические специалисты проходят обучение непосредственно </div>
-          </div><!-- /.fitchesblock__content -->
-        </div><!-- /.fitchesblock__wrapper -->
-      </div><!-- /.fitchesblock__item -->
-      <div class="fitchesblock__item">
-        <div class="fitchesblock__wrapper">
-          <div class="fitchesblock__content">
-            <div class="fitchesblock__title">
-              <div class="fitchesblock__icon">
-                <img src="./img/crane.png" alt="">
-              </div><!-- /.fitchesblock__icon -->
-              <div class="fitchesblock__name">Товар в наличии</div>
-            </div><!-- /.fitchesblock__title -->
-            <div class="fitchesblock__text">Популярные модели всегда в наличии на складе.</div>
-          </div><!-- /.fitchesblock__content -->
-        </div><!-- /.fitchesblock__wrapper -->
-      </div><!-- /.fitchesblock__item -->
+  <section class="fitchesblock">
+    <div class="container">
+      <div class="fitchesblock__header">
+        <h2>Наши <br>преимущества</h2>
+        <div class="fitchesblock__descr">Молодой и развивающийся завод по проектированию,
+          изготовлению спецтехники с КМУ и сельскохозяйственной техники. </div>
+      </div><!-- /.fitchesblock__header -->
+      <div class="fitchesblock__items">
+        <div class="fitchesblock__item">
+          <div class="fitchesblock__wrapper">
+            <div class="fitchesblock__content">
+              <div class="fitchesblock__title">
+                <div class="fitchesblock__icon">
+                  <img src="./img/like.png" alt="">
+                </div><!-- /.fitchesblock__icon -->
+                <div class="fitchesblock__name">Качество</div>
+              </div><!-- /.fitchesblock__title -->
+              <div class="fitchesblock__text">Мы гарантируем высочайшее качество продукции.</div>
+            </div><!-- /.fitchesblock__content -->
+          </div><!-- /.fitchesblock__wrapper -->
+        </div><!-- /.fitchesblock__item -->
+        <div class="fitchesblock__item">
+          <div class="fitchesblock__wrapper">
+            <div class="fitchesblock__content">
+              <div class="fitchesblock__title">
+                <div class="fitchesblock__icon">
+                  <img src="./img/shield.png" alt="">
+                </div><!-- /.fitchesblock__icon -->
+                <div class="fitchesblock__name">Гарантия</div>
+              </div><!-- /.fitchesblock__title -->
+              <div class="fitchesblock__text">Мы всегда четко соблюдаем свои обязательства.</div>
+            </div><!-- /.fitchesblock__content -->
+          </div><!-- /.fitchesblock__wrapper -->
+        </div><!-- /.fitchesblock__item -->
+        <div class="fitchesblock__item">
+          <div class="fitchesblock__wrapper">
+            <div class="fitchesblock__content">
+              <div class="fitchesblock__title">
+                <div class="fitchesblock__icon">
+                  <img src="./img/list.png" alt="">
+                </div><!-- /.fitchesblock__icon -->
+                <div class="fitchesblock__name">Широкий <br> ассортимент</div>
+              </div><!-- /.fitchesblock__title -->
+              <div class="fitchesblock__text">Наша компания предлагает широкий ассортимент продукции.</div>
+            </div><!-- /.fitchesblock__content -->
+          </div><!-- /.fitchesblock__wrapper -->
+        </div><!-- /.fitchesblock__item -->
+        <div class="fitchesblock__item">
+          <div class="fitchesblock__wrapper">
+            <div class="fitchesblock__content">
+              <div class="fitchesblock__title">
+                <div class="fitchesblock__icon">
+                  <img src="./img/conversation.png" alt="">
+                </div><!-- /.fitchesblock__icon -->
+                <div class="fitchesblock__name">Индивидуально</div>
+              </div><!-- /.fitchesblock__title -->
+              <div class="fitchesblock__text">Индивидуальная работа с каждым клиентом.</div>
+            </div><!-- /.fitchesblock__content -->
+          </div><!-- /.fitchesblock__wrapper -->
+        </div><!-- /.fitchesblock__item -->
+        <div class="fitchesblock__item">
+          <div class="fitchesblock__wrapper">
+            <div class="fitchesblock__content">
+              <div class="fitchesblock__title">
+                <div class="fitchesblock__icon">
+                  <img src="./img/agreement.png" alt="">
+                </div><!-- /.fitchesblock__icon -->
+                <div class="fitchesblock__name">Квалифицированный <br> персонал</div>
+              </div><!-- /.fitchesblock__title -->
+              <div class="fitchesblock__text">Наши технические специалисты проходят обучение непосредственно </div>
+            </div><!-- /.fitchesblock__content -->
+          </div><!-- /.fitchesblock__wrapper -->
+        </div><!-- /.fitchesblock__item -->
+        <div class="fitchesblock__item">
+          <div class="fitchesblock__wrapper">
+            <div class="fitchesblock__content">
+              <div class="fitchesblock__title">
+                <div class="fitchesblock__icon">
+                  <img src="./img/crane.png" alt="">
+                </div><!-- /.fitchesblock__icon -->
+                <div class="fitchesblock__name">Товар в наличии</div>
+              </div><!-- /.fitchesblock__title -->
+              <div class="fitchesblock__text">Популярные модели всегда в наличии на складе.</div>
+            </div><!-- /.fitchesblock__content -->
+          </div><!-- /.fitchesblock__wrapper -->
+        </div><!-- /.fitchesblock__item -->
 
-    </div><!-- /.fitchesblock__items -->
-  </div><!-- /.container -->
-</section><!-- /.fitchesblock -->
-
+      </div><!-- /.fitchesblock__items -->
+    </div><!-- /.container -->
+  </section><!-- /.fitchesblock -->
+</div><!-- /.page -->
 </div><!-- /.page -->
 <%= _.template(require('../includes/footer.html').default)(data) %>
