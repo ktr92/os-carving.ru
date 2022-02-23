@@ -40,7 +40,7 @@ $(document).ready(function () {
 
         }
       },
-      
+
     ]
   });
 
@@ -52,13 +52,13 @@ $(document).ready(function () {
   });
 
 
-  $('.mobilemenu').on('click', function() {
+  $('.mobilemenu').on('click', function () {
     $('.mainblock__nav_mobile').slideToggle()
   })
 
 
   /* открытие и закрытие модальных окон из js  */
-  $('.js-modalcall--success').on('click', function() {
+  $('.js-modalcall--success').on('click', function () {
     $('#modal-callback').modal('hide')
     $('#modal-success').modal('show')
   })
@@ -73,9 +73,9 @@ $(document).ready(function () {
     fade: true,
     asNavFor: '.productimg__previews',
 
-});
+  });
 
-$('.productimg__previews').slick({
+  $('.productimg__previews').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     fade: false,
@@ -89,45 +89,76 @@ $('.productimg__previews').slick({
     prevArrow: '.productimg__arrow_left',
     asNavFor: '.productimg__images',
     responsive: [{
-            breakpoint: 1343,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-        },
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
     ]
 
-});
-$(".productimg__preview").click(function(e) {
+  });
+
+  $(".productimg__preview").click(function (e) {
     e.preventDefault();
     actIndex = $(this).attr('data-slick-index');
     var slider = $('.productimg__images');
     slider[0].slick.slickGoTo(parseInt(actIndex));
-});
-
-$('.expand').on('click', function(e) {
-  e.preventDefault()
-  $(this).siblings('.el_hidden').removeClass('el_hidden')
-  $(this).hide()
-})
+  });
 
 
 
-  $(function() {
-  
-    $('.js-tabs-header ul').on('click', 'li:not(.active)', function() {
+  $('.js-productslider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: false,
+    dots: true,
+    fade: false,
+    nextArrow: $(this).find('.sliderarrow__right'),
+    prevArrow: $(this).find('.sliderarrow__left'),
+    responsive: [{
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+
+    ]
+  });
+
+
+  /*  $(".productslider__right").click(function (e) {
+		$(this).parent().parent().find(".slick-slider").slick("slickNext");
+	});
+	$(".productslider__left").click(function (e) {
+		$(this).parent().parent().find(".slick-slider").slick("slickPrev");
+	}); */
+
+  $('.expand').on('click', function (e) {
+    e.preventDefault()
+    $(this).siblings('.el_hidden').removeClass('el_hidden')
+    $(this).hide()
+  })
+
+
+
+  $(function () {
+
+    $('.js-tabs-header ul').on('click', 'li:not(.active)', function () {
       $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('.js-tabs').find('.js-tabs-contents').removeClass('active').eq($(this).index()).addClass('active');
     });
-  
+
   });
 
 
