@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <link rel="stylesheet" href="css/style.bundle.css" />
+  <title>Каталог | Карвинг</title>
+</head>
+
+<body>
+<header id="header" class="header">
+  <div class="header__wrapper">
+    <div class="section">
+      <div class="header__content dflex dflex-between">
+        <div class="mobilemenu">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve"><g><g id="Menu"><path fill="#000" d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"/><path fill="#000" d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03S379.58,180.455,372.939,180.455z"/><path fill="#000" d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"/></g><g></g><g></g><g></g><g></g><g></g><g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        </div><!-- /.mobilemenu -->
+        <div class="logo"><a href="/">
+          <img src="./img/logo.png" alt="" class="logo--white">
+          <img src="./img/logo2.svg" alt="" class="logo--dark">
+        </a></div><!-- /.logo -->
+        <div class="header__info">
+          <div class="container">
+            <div class="header__items dflex dflex-between">
+              <div class="header__address">
+                <div class="location">
+                  Татарстан, Набережные Челны, <br> Производственный проезд, 45
+                </div><!-- /.location -->
+              </div><!-- /.header__address -->
+              <div class="header__contacts">
+                <div class="contactblock">
+                  <div class="contactblock__phone"><a href="tel:88552910916">8 (8552) 91-09-16</a> </div>
+                  <!-- /.contactblock__phone -->
+                  <div class="contactblock__mail"><a href="mailto:carving116@yandex.ru">carving116@yandex.ru </a></div>
+                  <!-- /.contactblock__mail -->
+                </div><!-- /.contactblock -->
+              </div><!-- /.header__contacts -->
+            </div><!-- /.header__items dflex dflex-between -->
+          </div><!-- /.container -->
+        </div><!-- /.header__info -->
+        
+        <div class="header__callback"><a href="#modal-callback" data-toggle="modal" class="btn btn_primary btn_phone">
+          <span> Заказать
+            звонок</span> </a><!-- /.btn btn_main -->
+        </div><!-- /.header__callback -->
+      </div><!-- /.header__content -->
+    </div><!-- /.section -->
+  </div><!-- /.header__wrapper -->
+  <div class="mainblock__nav mainblock__nav_mobile">
+    <div class="mobilemenu">
+      <img src="./img/menu.svg" alt="">
+    </div><!-- /.mobilemenu -->
+    <ul>
+      <li><a href="#block0" class="scrollTo active">Главная</a></li>
+      <li><a href="#block1" class="scrollTo">Каталог</a></li>
+      <li><a href="#block2" class="scrollTo">О нас</a></li>
+      <li><a href="#block3" class="scrollTo">Контакты</a></li>
+    </ul>
+  </div><!-- /.mainblock__nav -->
+
+</header><!-- /#header.header -->
+<div class="page">
+  <div class="layout layout_column">
+    <section class="layout_left">
+      <div class="pageheader__content">
+        <div class="pageheading">
+          <div class="breadcrumbs">
+            <ul>
+              <li><a href=""><span>Главная</span></a></li>
+              <li><span>модальные окна</span></li>
+            </ul>
+          </div><!-- /.breadcrumbs -->
+          <h1>модальные окна</h1>
+        </div><!-- /.pageheading -->
+      </div><!-- /.pageheader_catalog -->
+    </section><!-- /.pageheader pageheader_catalog -->
+
+    <section class="layout_right">
+     <div class="container">
+        <!-- вызов по кнопке -->
+        <a href="#modal-callback" data-toggle="modal" class="btn_primary">Заказать звонок</a>
+        <a href="#modal-order" class="btn btn_primary" data-toggle="modal">Оформление заказа</a>
+        <a href="#modal-price" class="btn btn_primary" data-toggle="modal">Запрос цены</a>
+        <a href="#modal-info" class="btn btn_primary" data-toggle="modal">Информация</a>
+        <!-- вызов из js см index.js-->
+        <a href="#" class="btn btn_primary js-modalcall js-modalcall--success">Готово</a>
+     </div><!-- /.container -->
+    </section><!-- /.pagecontent -->
+  </div><!-- /.layout layout--column -->
+
+</div><!-- /.page -->
+<footer id="footer" class="footer clearfix">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__cols">
+        <div class="footer__col">
+          <div class="footer__info">
+            <div class="footerinfo">
+              <div class="footerinfo__logo"><img src="./img/logo.png" alt=""></div><!-- /.footerinfo__logo -->
+              <div class="footerinfo__address"><span>Татарстан, Набережные Челны, Производственный проезд, 45</span>
+              </div>
+              <div class="footerinfo__copy"><span>© 2006-2020 г. ООО «КАРВИНГ»</span></div><!-- /.footerinfo__copy -->
+              <div class="footerinfo__dev"><a href="//velvetmedia.ru" target="_blank">Разработка и продвижение -
+                  <span class="velvet">VELVET</span> </a></div>
+            </div><!-- /.footerinfo -->
+          </div><!-- /.footer__info -->
+        </div><!-- /.footer__col -->
+        <div class="footer__col">
+          <div class="footer__title">Полезная информация</div>
+          <div class="footer__menu">
+            <ul>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Каталог</a></li>
+              <li><a href="">Преимущества</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div><!-- /.footer__menu -->
+        </div><!-- /.footer__col -->
+        <div class="footer__col">
+          <div class="footer__title">Каталог товаров</div>
+          <div class="footer__menu">
+            <ul>
+              <li><a href="">Бортовые с КМУ </a></li>
+              <li><a href="">Металловоз с КМУ </a></li>
+              <li><a href="">Тягач с КМУ </a></li>
+            </ul>
+          </div> <!-- /.footer__menu -->
+        </div><!-- /.footer__col -->
+        <div class="footer__col">
+          <div class="footer__title">Контакты</div>
+          <div class="footer__contacts">
+            <div class="footer__phone"><a href="tel:88552910916">8 (8552) 91-09-16</a></div>
+            <div class="footer__mail"><a href="mailto:carving116@yandex.ru ">carving116@yandex.ru </a></div>
+          </div><!-- /.footer__contacts -->
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__cols -->
+    </div>
+
+  </div>
+</footer>
+
+
+<div id="modal-callback" class="modal fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Заказать звонок</div>
+          <div class="modal-text">Мы всегда рады нашим клиентам и готовы проконсультировать. Обращайтесь, мы поможем!</div>
+          <div class="modal__form">
+            <form>
+              <div class="form-group">
+                <input type="text" name="" placeholder="Ваше имя *">
+              </div>
+              <div class="form-group">
+                <input type="email" name="" placeholder="Ваш email *">
+              </div>
+              <div class="form-group">
+                <input type="tel" name="" placeholder="+7 (---) --- -- --">
+              </div>
+              <!-- <div class="form-group">
+                <div class="check">
+                  <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Я согласен на <a href="">обработку
+                      персональных данных</a></label>
+                </div>
+              </div> -->
+              <div class="form-group form-group_last">
+                <button class="btn btn_primary btn_message" type="submit"><span>Перезвоните мне</span>  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-success" class="modal fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Готово!</div>
+          <div class="modal-text">Ваша заявка отправлена и будет обработала в ближайшее время. Ожидайте звонка.</div>
+          <a href="/" class="btn btn_primary " type="submit">Вернуться на главную</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-order" class="modal fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Оформление заказа</div>
+          <div class="modalist">
+            <div class="modalist__item">
+              <div class="modalist__image">
+                <div class="modalist__img"><img src="./images/image5.jpg" alt=""></div>
+              </div><!-- /.modalist__image -->
+              <div class="modalist__info">
+                <div class="modalist___name">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+              </div><!-- /.modalist__info -->
+            </div><!-- /.modalist__item -->
+          </div><!-- /.modalist -->
+          <div class="modal__form">
+            <form>
+              <div class="form-group">
+                <input type="text" name="" placeholder="Ваше имя *">
+              </div>
+              <div class="form-group">
+                <input type="email" name="" placeholder="Ваш email *">
+              </div>
+              <div class="form-group">
+                <input type="tel" name="" placeholder="+7 (---) --- -- --">
+              </div>
+              <!-- <div class="form-group">
+                <div class="check">
+                  <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Я согласен на <a href="">обработку
+                      персональных данных</a></label>
+                </div>
+              </div> -->
+              <div class="form-group form-group_last">
+                <button class="btn btn_primary btn_message" type="submit"><span>Оформить заказ</span>  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-price" class="modal fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Запрос цены </div>
+          <div class="modalist">
+            <div class="modalist__item">
+              <div class="modalist__image">
+                <div class="modalist__img"><img src="./images/image5.jpg" alt=""></div>
+              </div><!-- /.modalist__image -->
+              <div class="modalist__info">
+                <div class="modalist___name">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+              </div><!-- /.modalist__info -->
+            </div><!-- /.modalist__item -->
+          </div><!-- /.modalist -->
+          <div class="modal__form">
+            <form>
+              <div class="form-group">
+                <input type="text" name="" placeholder="Ваше имя *">
+              </div>
+              <div class="form-group">
+                <input type="email" name="" placeholder="Ваш email *">
+              </div>
+              <div class="form-group">
+                <input type="tel" name="" placeholder="+7 (---) --- -- --">
+              </div>
+              <!-- <div class="form-group">
+                <div class="check">
+                  <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Я согласен на <a href="">обработку
+                      персональных данных</a></label>
+                </div>
+              </div> -->
+              <div class="form-group form-group_last">
+                <button class="btn btn_primary btn_message" type="submit"><span>Отправить цену на почту</span>  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-info" class="modal modal_large fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Доставим автомобиль до вашего города </div>
+          <div class="detailtext">
+            <p>Предлагаем воспользоваться услугой по доставке приобретенной техники. Доставка осуществляется по всей России, в том числе по регионам с малоразвитой транспортной инфраструктурой.
+            </p>
+            <p><b>Стоимость доставки </b></p>
+            <p>Стоимость доставки спецтехники формируется на основании следующих расходов:</p>
+            <ul>
+              <li>  Предпродажная подготовка ТС;</li>
+              <li> Расходы на качественное дизельное топливо;</li>
+              <li> Расходы на водителя;</li>
+              <li>  Стоянка автотехники;</li>
+              <li>Страховка;</li>
+              <li>Разрешения на движение по дорогам общего пользования тяжеловесного или негабаритного транспортного средства;</li>
+              <li>Техническое обслуживание автомобиля.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="js/bundle.js"></script>
+
+
+
+</body>
+
+</html>

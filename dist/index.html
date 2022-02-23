@@ -435,30 +435,181 @@
 
 <div id="modal-callback" class="modal fade">
   <div class="modal-dialog">
-    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img
-        src="./img/close.png"></button>
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
     <div class="modal-content">
       <div class="modal-body">
         <div class="modal__content">
           <div class="modal-title">Заказать звонок</div>
+          <div class="modal-text">Мы всегда рады нашим клиентам и готовы проконсультировать. Обращайтесь, мы поможем!</div>
           <div class="modal__form">
             <form>
               <div class="form-group">
-                <input type="text" name="" placeholder="Ваше имя">
+                <input type="text" name="" placeholder="Ваше имя *">
               </div>
               <div class="form-group">
-                <input type="tel" name="" placeholder="+7 (___) ___-__-__">
+                <input type="email" name="" placeholder="Ваш email *">
               </div>
               <div class="form-group">
+                <input type="tel" name="" placeholder="+7 (---) --- -- --">
+              </div>
+              <!-- <div class="form-group">
                 <div class="check">
                   <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Я согласен на <a href="">обработку
                       персональных данных</a></label>
                 </div>
-              </div>
+              </div> -->
               <div class="form-group form-group_last">
-                <button class="btn btn_main btn_block" type="submit">Отправить заявку</button>
+                <button class="btn btn_primary btn_message" type="submit"><span>Перезвоните мне</span>  </button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-success" class="modal fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Готово!</div>
+          <div class="modal-text">Ваша заявка отправлена и будет обработала в ближайшее время. Ожидайте звонка.</div>
+          <a href="/" class="btn btn_primary " type="submit">Вернуться на главную</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-order" class="modal fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Оформление заказа</div>
+          <div class="modalist">
+            <div class="modalist__item">
+              <div class="modalist__image">
+                <div class="modalist__img"><img src="./images/image5.jpg" alt=""></div>
+              </div><!-- /.modalist__image -->
+              <div class="modalist__info">
+                <div class="modalist___name">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+              </div><!-- /.modalist__info -->
+            </div><!-- /.modalist__item -->
+          </div><!-- /.modalist -->
+          <div class="modal__form">
+            <form>
+              <div class="form-group">
+                <input type="text" name="" placeholder="Ваше имя *">
+              </div>
+              <div class="form-group">
+                <input type="email" name="" placeholder="Ваш email *">
+              </div>
+              <div class="form-group">
+                <input type="tel" name="" placeholder="+7 (---) --- -- --">
+              </div>
+              <!-- <div class="form-group">
+                <div class="check">
+                  <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Я согласен на <a href="">обработку
+                      персональных данных</a></label>
+                </div>
+              </div> -->
+              <div class="form-group form-group_last">
+                <button class="btn btn_primary btn_message" type="submit"><span>Оформить заказ</span>  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-price" class="modal fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Запрос цены </div>
+          <div class="modalist">
+            <div class="modalist__item">
+              <div class="modalist__image">
+                <div class="modalist__img"><img src="./images/image5.jpg" alt=""></div>
+              </div><!-- /.modalist__image -->
+              <div class="modalist__info">
+                <div class="modalist___name">Бортовой КАМАЗ 43118-76 с КМУ DongYang SS 1956</div>
+              </div><!-- /.modalist__info -->
+            </div><!-- /.modalist__item -->
+          </div><!-- /.modalist -->
+          <div class="modal__form">
+            <form>
+              <div class="form-group">
+                <input type="text" name="" placeholder="Ваше имя *">
+              </div>
+              <div class="form-group">
+                <input type="email" name="" placeholder="Ваш email *">
+              </div>
+              <div class="form-group">
+                <input type="tel" name="" placeholder="+7 (---) --- -- --">
+              </div>
+              <!-- <div class="form-group">
+                <div class="check">
+                  <input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Я согласен на <a href="">обработку
+                      персональных данных</a></label>
+                </div>
+              </div> -->
+              <div class="form-group form-group_last">
+                <button class="btn btn_primary btn_message" type="submit"><span>Отправить цену на почту</span>  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-info" class="modal modal_large fade">
+  <div class="modal-dialog">
+    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.2997 0.709971C12.9097 0.319971 12.2797 0.319971 11.8897 0.709971L6.99973 5.58997L2.10973 0.699971C1.71973 0.309971 1.08973 0.309971 0.699727 0.699971C0.309727 1.08997 0.309727 1.71997 0.699727 2.10997L5.58973 6.99997L0.699727 11.89C0.309727 12.28 0.309727 12.91 0.699727 13.3C1.08973 13.69 1.71973 13.69 2.10973 13.3L6.99973 8.40997L11.8897 13.3C12.2797 13.69 12.9097 13.69 13.2997 13.3C13.6897 12.91 13.6897 12.28 13.2997 11.89L8.40973 6.99997L13.2997 2.10997C13.6797 1.72997 13.6797 1.08997 13.2997 0.709971Z" fill="#CCCCCC"/>
+      </svg>
+      </button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal__content">
+          <div class="modal-title">Доставим автомобиль до вашего города </div>
+          <div class="detailtext">
+            <p>Предлагаем воспользоваться услугой по доставке приобретенной техники. Доставка осуществляется по всей России, в том числе по регионам с малоразвитой транспортной инфраструктурой.
+            </p>
+            <p><b>Стоимость доставки </b></p>
+            <p>Стоимость доставки спецтехники формируется на основании следующих расходов:</p>
+            <ul>
+              <li>  Предпродажная подготовка ТС;</li>
+              <li> Расходы на качественное дизельное топливо;</li>
+              <li> Расходы на водителя;</li>
+              <li>  Стоянка автотехники;</li>
+              <li>Страховка;</li>
+              <li>Разрешения на движение по дорогам общего пользования тяжеловесного или негабаритного транспортного средства;</li>
+              <li>Техническое обслуживание автомобиля.</li>
+            </ul>
           </div>
         </div>
       </div>

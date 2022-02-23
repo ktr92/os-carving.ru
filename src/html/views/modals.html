@@ -1,0 +1,37 @@
+<% var data = {
+  title: "Каталог | Карвинг",
+  author: ""
+}; %>
+<%= _.template(require('../includes/head.html').default)(data) %>
+<%= _.template(require('../includes/header.html').default)(data) %>
+<div class="page">
+  <div class="layout layout_column">
+    <section class="layout_left">
+      <div class="pageheader__content">
+        <div class="pageheading">
+          <div class="breadcrumbs">
+            <ul>
+              <li><a href=""><span>Главная</span></a></li>
+              <li><span>модальные окна</span></li>
+            </ul>
+          </div><!-- /.breadcrumbs -->
+          <h1>модальные окна</h1>
+        </div><!-- /.pageheading -->
+      </div><!-- /.pageheader_catalog -->
+    </section><!-- /.pageheader pageheader_catalog -->
+
+    <section class="layout_right">
+     <div class="container">
+        <!-- вызов по кнопке -->
+        <a href="#modal-callback" data-toggle="modal" class="btn_primary">Заказать звонок</a>
+        <a href="#modal-order" class="btn btn_primary" data-toggle="modal">Оформление заказа</a>
+        <a href="#modal-price" class="btn btn_primary" data-toggle="modal">Запрос цены</a>
+        <a href="#modal-info" class="btn btn_primary" data-toggle="modal">Информация</a>
+        <!-- вызов из js см index.js-->
+        <a href="#" class="btn btn_primary js-modalcall js-modalcall--success">Готово</a>
+     </div><!-- /.container -->
+    </section><!-- /.pagecontent -->
+  </div><!-- /.layout layout--column -->
+
+</div><!-- /.page -->
+<%= _.template(require('../includes/footer.html').default)(data) %>

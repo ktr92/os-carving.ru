@@ -10,6 +10,8 @@ $(document).ready(function () {
     return false;
   });
 
+  $('input[type="tel"]').mask('+7 (999) 999-99-99')
+
 
   $(".shapeslider__slider").slick({
     // normal options...
@@ -53,5 +55,81 @@ $(document).ready(function () {
   $('.mobilemenu').on('click', function() {
     $('.mainblock__nav_mobile').slideToggle()
   })
+
+
+  /* открытие и закрытие модальных окон из js  */
+  $('.js-modalcall--success').on('click', function() {
+    $('#modal-callback').modal('hide')
+    $('#modal-success').modal('show')
+  })
+  /*  */
+
+  $('.productimg__images').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    dots: false,
+    fade: true,
+    asNavFor: '.productimg__previews',
+
+});
+
+$('.productimg__previews').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    fade: false,
+    dots: false,
+    infinite: false,
+    vertical: false,
+    verticalSwiping: false,
+    centerMode: false,
+    arrows: true,
+    nextArrow: '.productimg__arrow_right',
+    prevArrow: '.productimg__arrow_left',
+    asNavFor: '.productimg__images',
+    responsive: [{
+            breakpoint: 1343,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+
+});
+$(".productimg__preview").click(function(e) {
+    e.preventDefault();
+    actIndex = $(this).attr('data-slick-index');
+    var slider = $('.productimg__images');
+    slider[0].slick.slickGoTo(parseInt(actIndex));
+});
+
+$('.expand').on('click', function(e) {
+  e.preventDefault()
+  $(this).siblings('.el_hidden').removeClass('el_hidden')
+  $(this).hide()
+})
+
+
+
+  $(function() {
+  
+    $('.js-tabs-header ul').on('click', 'li:not(.active)', function() {
+      $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('.js-tabs').find('.js-tabs-contents').removeClass('active').eq($(this).index()).addClass('active');
+    });
+  
+  });
+
+
 
 })
